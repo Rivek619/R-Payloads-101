@@ -1,1 +1,9 @@
+Steps to Replicate the Pixieflood Vulnerability 
 
+> Create an Account: Sign up for an account on target.com.
+> Go to Profile: Log in and navigate to the profile section.
+> Edit Profile: Click the "Edit Profile" option.
+> Upload Exploit Image: Drag and drop the crafted exploit image as your profile picture.
+> Observe Impact: After uploading, the site may slow down or become unresponsive.
+
+Note: Perform only with explicit permission for ethical testing.
