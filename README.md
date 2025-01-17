@@ -6,5 +6,5 @@ R-Payloads 101
   - XSS
 
 * SwaggerUI
-  - XSS (5)
+  - XSS (6)
   - Fake Login Page
