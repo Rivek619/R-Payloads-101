@@ -20,4 +20,13 @@ paths:
           description: The password for login
           required: true
           type: string
-   
+      tags:
+        - Click here to login
+      responses:
+        '200':
+          description: Successfully logged in and authenticated.
+        '400':
+          description: Invalid credentials or missing parameters.
+        '500':
+          description: Internal server error.
+
