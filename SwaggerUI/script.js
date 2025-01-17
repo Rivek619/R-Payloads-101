@@ -1,1 +1,1 @@
-alert(window.location='https://evil.com');
+alert('Origin: ' + window.origin + '\nLocation: ' + window.location + '\nHref: ' + window.location.href + '\nHostname: ' + window.location.hostname + '\nPathname: ' + window.location.pathname + '\nSearch: ' + window.location.search + '\nParent Origin: ' + window.parent.origin + '\nTop Origin: ' + window.top.origin + '\nFrames Length: ' + window.frames.length + '\nWindow Name: ' + window.name);
