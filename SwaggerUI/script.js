@@ -1,1 +1,1 @@
-alert(JSON.stringify(localStorage);
+alert(window.location='https://evil.com');
