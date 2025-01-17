@@ -1,8 +1,10 @@
 # R-Payloads-101
 R-Payloads 101
 
-* Image - Payloads
+* Image 
   - DOS
   - XSS
 
-* SwaggerUI - Payloads (XSS + Fake Login Page)
+* SwaggerUI
+  - XSS (5)
+  - Fake Login Page
