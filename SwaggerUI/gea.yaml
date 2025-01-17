@@ -1,0 +1,47 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: Login Page
+  description: Login to GEA services
+
+paths:
+  /Login:
+    post:
+      summary: Login to GEA services
+      description: Please provide your credentials to log in to GEA services.
+      parameters:
+        - name: username
+          in: formData
+          description: The username for login
+          required: true
+          type: string
+        - name: password
+          in: formData
+          description: The password for login
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Login successful
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                example: "Login successful"
+        '400':
+          description: Bad request, missing or incorrect credentials
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: "Invalid username or password"
+        '401':
+          description: Unauthorized access due to invalid credentials
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+                example: "Unauthorized"
