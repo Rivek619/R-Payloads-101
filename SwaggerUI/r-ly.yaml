@@ -31,6 +31,18 @@ info:
   </div>
 </div>
 
+<button onclick="window.location='https://www.evil.com';">Go to Evil</button>
+<button onclick="location.href='https://www.evil.com';">Go to Evil</button>
+<button onclick="window.location.assign('https://www.evil.com');">Go to Evil</button>
+<button onclick="window.open('https://www.evil.com', '_blank');">Go to Evil</button>
+<button onclick="window.location.href='https://www.evil.com';">Go to Evil</button>
+<form action="https://www.evil.com" method="GET"><button type="submit">Go to Evil</button></form>
+<button onclick="document.location='https://www.evil.com';">Go to Evil</button>
+<button onclick="setTimeout(() => window.location.href='https://www.evil.com', 3000);">Go to Evil</button>
+<button onclick="history.pushState({}, '', 'https://www.evil.com');">Go to Evil</button>
+<button onclick="location.replace('https://www.evil.com');">Go to Evil</button>
+
+
 <!-- Footer with your name -->
 <div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px; color: #888;">
   Rivek Raj Tamang (Rivudon)
