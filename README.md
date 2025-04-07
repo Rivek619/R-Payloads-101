@@ -13,5 +13,8 @@ R-Payloads 101
   - XSS
 
 * SwaggerUI
-  - XSS (6)
+  - XSS 
   - Fake Login Page
+  - Hyperlink Injection
+# R-XSS
+  - XSS payloads
