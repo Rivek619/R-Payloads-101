@@ -4,5 +4,7 @@
 /pprof
 /debug/pprof
 /.vscode/sftp.json
+/.vscode/liveserver.json
+/.vscode
 /.svn
 /.svn/wc.db  
