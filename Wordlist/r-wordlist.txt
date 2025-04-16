@@ -7,4 +7,5 @@
 /.vscode/liveserver.json
 /.vscode
 /.svn
-/.svn/wc.db  
+/.svn/wc.db
+/cpanel.config
