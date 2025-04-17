@@ -3,6 +3,7 @@
 /vstorage
 /pprof
 /debug/pprof
+/.chunk.js
 /.vscode/sftp.json
 /.vscode/liveserver.json
 /.vscode
