@@ -1,3 +1,10 @@
+/actuator
+/actuator%252fenv
+/actuator/.;/env
+/actuator%00/metrics
+//actuator//heapdump
+/actuatr;/env
+/actuator%2e%2e/
 /ganglia/
 /ganglia/?c=ElastiCluster&m=load_one&r=hour&s=by%20name&hc=4&mc=2
 /vstorage
@@ -9,4 +16,13 @@
 /.vscode
 /.svn
 /.svn/wc.db
+/.env
 /cpanel.config
+/html
+/html/locator
+/html/locator/data
+/etc/passwd?raw
+/storage
+/storage/logs
+/storage/logs/laravel.log
+/support
