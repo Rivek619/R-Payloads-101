@@ -27,3 +27,5 @@
 /storage/logs/laravel.log
 /support
 /mantis
+/mantisbt
+/man
