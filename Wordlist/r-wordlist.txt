@@ -32,3 +32,4 @@
 /bt
 /crud.php
 /.admin
+/admin/default.asp
