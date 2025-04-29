@@ -31,3 +31,4 @@
 /man
 /bt
 /crud.php
+/.admin
