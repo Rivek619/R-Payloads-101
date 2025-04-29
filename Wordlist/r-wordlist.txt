@@ -30,3 +30,4 @@
 /mantisbt
 /man
 /bt
+/crud.php
