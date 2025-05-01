@@ -1,3 +1,4 @@
+.gitignore
 app/plugins/saml-20-single-sign-on/saml/config/config.php
 app/
 app/plugins/
