@@ -11,6 +11,8 @@ HTML Tags:
 <i>hello</u>
 <font color='red'>hello</font>
 &lt;font color='red'&gt;hello&lt;/font&gt;
+&lt;i&gt;hello&lt;&#47;i&gt;
+&lt;i&gt;hello&lt;&#x2F;i&gt;
 &lt;i&gt;hello&lt;/i&gt;
 &#60;i&#62;hello&#60;/i&#62;
 &#x3C;i&#x3E;hello&#x3C;/i&#x3E;
