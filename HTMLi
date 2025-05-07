@@ -1,0 +1,22 @@
+URLs:
+https://www.evil.com
+www.evil.com
+%3Cu%3Ehello%3C%2Fu%3E (URL-encoded)
+%253Cu%253Ehello%253C%252Fu%253E (Double URL-encoded)
+
+HTML Tags:
+<u>hello</u>
+<i>hello</u>
+<font color='red'>hello</font>
+&lt;font color='red'&gt;hello&lt;/font&gt;
+&lt;i&gt;hello&lt;/i&gt;
+&#60;i&#62;hello&#60;/i&#62;
+&#x3C;i&#x3E;hello&#x3C;/i&#x3E;
+\u003Ci\u003Ehello\u003C/i\u003E
+\u003Cfont\u003Ehello\u003C/font\u003E
+
+JavaScript Injection:
+<a href="javascript:alert('XSS')">Click Me</a>
+<button onclick="alert('XSS')">Click me</button>
+Markdown:
+[Click here](http://evil.com)
