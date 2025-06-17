@@ -14,3 +14,4 @@ wp-config.php.zip
 wp-config.php.html
 wp-config.php~
 wp-config.new
+wp-admin/setup-config.php?step=1
