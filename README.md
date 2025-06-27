@@ -16,6 +16,11 @@ Contents
   - XSS 
   - Fake Login Page
   - Hyperlink Injection
+
+* CRLF
+  - CRLFi
+  - XSS
+  - Redirection
     
 * R-XSS
   - XSS payloads
