@@ -9,6 +9,7 @@
 /ganglia/?c=ElastiCluster&m=load_one&r=hour&s=by%20name&hc=4&mc=2
 /vstorage
 /pprof
+/debug
 /debug/pprof
 /.chunk.js
 /.vscode/sftp.json
@@ -33,3 +34,9 @@
 /crud.php
 /.admin
 /admin/default.asp
+/metrics
+/health
+/status
+/api
+
+
